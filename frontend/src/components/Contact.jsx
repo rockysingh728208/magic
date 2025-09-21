@@ -206,10 +206,10 @@ const Contact = () => {
           </p>
           <div className="space-y-4 text-gray-700">
             <div>
-              <strong>📍 Address:</strong> Barahi,Bazar,sitamarhi,Bihar
+              <strong>📍 Address:</strong> Barahi,bazar,Sitamarhi,Bihar
             </div>
             <div>
-              <strong>📧 Email:</strong> rajaelectricshop@gmail.com
+              <strong>📧 Email:</strong> rajaelectricshopshop@gmail.com
             </div>
             <div>
               <strong>📞 Phone:</strong> +91 9117400640
