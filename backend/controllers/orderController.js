@@ -76,17 +76,32 @@ export const verifyPayment = async (req, res) => {
 
 
 
-// Get all orders for admin
+// // Get all orders for admin
+// export const getAllOrders = async (req, res) => {
+//   try {
+//     const orders = await Order.find()
+//       .populate("userId", "name email") // user info
+//       .populate("items.productId", "name") // product info
+//       .sort({ createdAt: -1 });
+
+//     res.json({ success: true, orders });
+//   } catch (error) {
+//     console.error("Get Orders Error:", error);
+//     res.status(500).json({ success: false, message: error.message });
+//   }
+// };
+
+
+// Get All Orders (Admin)
 export const getAllOrders = async (req, res) => {
   try {
     const orders = await Order.find()
-      .populate("userId", "name email") // user info
-      .populate("items.productId", "name") // product info
+      .populate("userId", "name email phone address") // ✅ extra fields
+      .populate("items.productId", "name") // ✅ product info
       .sort({ createdAt: -1 });
 
-    res.json({ success: true, orders });
+    res.status(200).json(orders);
   } catch (error) {
-    console.error("Get Orders Error:", error);
-    res.status(500).json({ success: false, message: error.message });
+    res.status(500).json({ message: "Error fetching orders", error });
   }
 };
