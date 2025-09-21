@@ -1,0 +1,88 @@
+// import { assets } from "./assets/assets1";
+
+// const products = [
+//   {
+//     id: 1,
+//     name: "LED Bulb",
+//     description: "12W Bright LED bulb for home lighting",
+//     price: 120,
+//     image: assets.led_bulb,
+//   },
+//   {
+//     id: 2,
+//     name: "Ceiling Fan",
+//     description: "High speed ceiling fan 3 blades",
+//     price: 1500,
+//     image: assets.fan,
+//   },
+//   {
+//     id: 3,
+//     name: "Electric Iron",
+//     description: "Lightweight & easy to use electric iron",
+//     price: 800,
+//     image: assets.iron,
+//   },
+//   {
+//     id: 4,
+//     name: "Extension Board",
+//     description: "4 socket extension board with wire",
+//     price: 450,
+//     image: assets.extension_board,
+//   },
+// ];
+
+// export default products;
+import { assets } from "./assets/assets1";
+
+const products = [
+  { id: 1, name: "LED Bulb", description: "12W Bright LED bulb for home lighting", price: 120, image: assets.led_bulb },
+  { id: 2, name: "Ceiling Fan", description: "High speed ceiling fan with 3 blades", price: 1500, image: assets.fan },
+  { id: 3, name: "Electric Iron", description: "Lightweight & easy to use electric iron", price: 800, image: assets.iron },
+  { id: 4, name: "Extension Board", description: "4 socket extension board with wire", price: 450, image: assets.extension_board },
+  { id: 5, name: "Heater", description: "Portable room heater for winters", price: 2200, image: assets.heater },
+  { id: 6, name: "Refrigerator", description: "Double door refrigerator for family", price: 25000, image: assets.refrigerator },
+  { id: 7, name: "Washing Machine", description: "Front load washing machine", price: 18000, image: assets.washing_machine },
+  { id: 8, name: "Microwave", description: "Convection microwave oven", price: 8000, image: assets.microwave },
+  { id: 9, name: "Blender", description: "High speed kitchen blender", price: 1200, image: assets.blender },
+  { id: 10, name: "Toaster", description: "2 slice bread toaster", price: 900, image: assets.toaster },
+  { id: 11, name: "Kettle", description: "Electric kettle with auto shut-off", price: 700, image: assets.kettle },
+  { id: 12, name: "Air Conditioner", description: "1.5 Ton Split AC", price: 30000, image: assets.air_conditioner },
+  { id: 13, name: "Vacuum Cleaner", description: "Bagless vacuum cleaner for home", price: 3500, image: assets.vacuum_cleaner },
+  { id: 14, name: "Mixer", description: "Kitchen mixer for dough and batter", price: 2200, image: assets.mixer },
+  { id: 15, name: "Coffee Machine", description: "Automatic coffee maker", price: 4500, image: assets.coffee_machine },
+  { id: 16, name: "Rice Cooker", description: "1.8L electric rice cooker", price: 1800, image: assets.rice_cooker },
+  { id: 17, name: "Juicer", description: "Electric juice extractor", price: 2500, image: assets.juicer },
+  { id: 18, name: "Water Purifier", description: "RO water purifier for safe drinking water", price: 12000, image: assets.water_purifier },
+  { id: 19, name: "Iron Box", description: "Steam iron box", price: 900, image: assets.iron_box },
+  { id: 20, name: "Oven", description: "Electric baking oven", price: 8000, image: assets.oven },
+  { id: 21, name: "Induction Cooktop", description: "Portable induction stove", price: 2500, image: assets.induction },
+  { id: 22, name: "Hair Dryer", description: "Fast drying hair dryer", price: 1200, image: assets.hair_dryer },
+  { id: 23, name: "Electric Grill", description: "Indoor electric grill", price: 2200, image: assets.electric_grill },
+  { id: 24, name: "Lamp", description: "LED table lamp", price: 600, image: assets.lamp },
+  { id: 25, name: "Portable Fan", description: "USB powered portable fan", price: 800, image: assets.portable_fan },
+  { id: 26, name: "Speaker", description: "Bluetooth wireless speaker", price: 1500, image: assets.speaker },
+  { id: 27, name: "TV", description: "32 inch LED Smart TV", price: 12000, image: assets.tv },
+  { id: 28, name: "Router", description: "WiFi 6 router", price: 3000, image: assets.router },
+  { id: 29, name: "Desktop PC", description: "High performance desktop computer", price: 45000, image: assets.desktop_pc },
+  { id: 30, name: "Laptop", description: "15 inch laptop with SSD", price: 55000, image: assets.laptop },
+  { id: 31, name: "Tablet", description: "10 inch Android tablet", price: 15000, image: assets.tablet },
+  { id: 32, name: "Smartphone", description: "Latest model smartphone", price: 35000, image: assets.smartphone },
+  { id: 33, name: "Camera", description: "Digital camera with 20MP lens", price: 22000, image: assets.camera },
+  { id: 34, name: "Projector", description: "Portable projector for home theater", price: 18000, image: assets.projector },
+  { id: 35, name: "Electric Guitar", description: "Professional electric guitar", price: 25000, image: assets.electric_guitar },
+  { id: 36, name: "Electric Toothbrush", description: "Rechargeable toothbrush", price: 1500, image: assets.electric_toothbrush },
+  { id: 37, name: "Smartwatch", description: "Fitness smartwatch with heart rate monitor", price: 5000, image: assets.smartwatch },
+  { id: 38, name: "Electric Bike", description: "Rechargeable electric bike", price: 45000, image: assets.electric_bike },
+  { id: 39, name: "Treadmill", description: "Foldable electric treadmill", price: 35000, image: assets.treadmill },
+  { id: 40, name: "Sewing Machine", description: "Electric sewing machine", price: 8000, image: assets.sewing_machine },
+  { id: 41, name: "Hair Straightener", description: "Professional hair straightener", price: 2500, image: assets.hair_straightener },
+  { id: 42, name: "Fridge Freezer", description: "Single door fridge freezer", price: 15000, image: assets.fridge_freezer },
+  { id: 43, name: "Electric Heater", description: "Room electric heater", price: 2200, image: assets.electric_heater },
+  { id: 44, name: "Electric Stove", description: "2 burner electric stove", price: 3000, image: assets.electric_stove },
+  { id: 45, name: "Deep Fryer", description: "Oil deep fryer", price: 3500, image: assets.deep_fryer },
+  { id: 46, name: "Dishwasher", description: "Automatic dishwasher for kitchen", price: 28000, image: assets.dishwasher },
+  { id: 47, name: "Electric Iron Box", description: "Steam electric iron box", price: 1200, image: assets.electric_iron },
+  { id: 48, name: "Water Heater", description: "Instant water heater", price: 4000, image: assets.water_heater },
+];
+
+export default products;
